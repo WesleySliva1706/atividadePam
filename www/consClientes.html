@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<meta name="color-scheme" content="light dark">
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<script src="./../cordova.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+	<script src="js/firebase.js"></script>
+	<script src="js/consulta.js"></script>
+
+	<title>Consulta de Clientes</title>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-dark bg-dark col-12">
+				<a class="navbar-brand" href="#">Consulta de Clientes</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Cadastrar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="consClientes.html">Consultar</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="card mb-3 col-12">
+				<div class="card-body">
+					<h5 class="card-title">Consultar - Contatos Agendados</h5>
+					<table class="table table-responsive" style="width: auto;">
+						<thead>
+							<tr>
+								<th scope="col">Nome</th>
+								<th scope="col">Telefone</th>
+								<th scope="col">Origem</th>
+								<th scope="col">Contato</th>
+								<th scope="col">Observação</th>
+								<th scope="col">Ação</th>
+							</tr>
+						</thead>
+						<tbody id="TableData">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

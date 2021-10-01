@@ -1,0 +1,56 @@
+*{
+	color: #ffffff;
+}
+
+body{
+	background-color: #2b2b2b;
+}
+
+.card{
+	background-color: #3b454f;
+}
+
+.btn{
+	background-color: #2b6675;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+}
+
+.inputs{
+	background-color: #3f4e62;
+	color: #ffffff;
+}
+
+.inputs::placeholder{
+	color: #ffffff;
+}
+
+.inputs:focus{
+	background-color: #2b2b2b;
+	color: #ffffff;
+}
+
+.inputs:disabled{
+	background-color: #3f4e62;
+	color: #ffffff;
+}
+
+table {
+	text-align: center;
+}
+
+thead {
+	border: 3px solid #2b6675;
+}
+
+tbody {
+	border: 3px solid #2b6675;
+}
+
+a {
+	color: #00ccff;
+}
